@@ -1,0 +1,16 @@
+using System;
+
+class Program 
+{
+  static void Main() 
+  {
+    Console.Write("Enter the first number: ");
+     int num1 = Convert.ToInt16(Console.ReadLine());
+    Console.Write("Enter the second number:");
+     int num2 = Convert.ToInt16(Console.ReadLine());
+    Console.Write("Enter the third number:");
+     int num3 = Convert.ToInt16(Console.ReadLine());
+    int smallest = Math.Min(Math.Min(num1, num2), num3);
+    Console.WriteLine($"The smallest value is: {smallest}");
+  }
+}
