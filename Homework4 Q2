@@ -1,0 +1,45 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+     PrintTriangle(5, "left");
+        PrintTriangle(5, "right");
+    }
+static void PrintTriangle(int N, string shape)
+    {
+        if (shape.ToLower() == "left")
+        {
+ Console.WriteLine($"N = {N}, Shape = {shape}");
+    for (int i = 1; i <= N; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        else if (shape.ToLower() == "right")
+        {
+ Console.WriteLine($"N = {N}, Shape = {shape}");
+    for (int i = 1; i <= N; i++)
+            {
+    for (int k = 1; k <= N - i; k++)
+                {
+                    Console.Write(" ");
+                }
+        for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid shape specified.");
+        }
+    }
+}
