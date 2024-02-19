@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int largest = GetLargestInteger();
+  
+      Console.WriteLine("The largest number is: " + largest);
+        }
+
+        static int GetLargestInteger()
+        {
+            Console.WriteLine("Enter the first number:");
+            int num1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter the second number:");
+            int num2 = int.Parse(Console.ReadLine());
+            return Math.Max(num1, num2);
+    }
+}
